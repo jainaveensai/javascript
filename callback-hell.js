@@ -9,6 +9,7 @@ api.createOrder(cart, function () {
 })
 
 //promiss chaining
+
 createOrder()
     .then(orderId => proceedToPayment(orderId))
     .then(paymentId => showOrderSummary(paymentId))
